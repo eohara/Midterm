@@ -63,8 +63,8 @@ public class RectangleTest {
 
 }
 	
-	/*@Test
-	public void RectangleCompareTest() {
+	//@Test
+	/*public void RectangleCompareTest() {
 
 		Object rec1 = new Rectangle(8, 4);
 		Object rec2 = new Rectangle(10, 4);
