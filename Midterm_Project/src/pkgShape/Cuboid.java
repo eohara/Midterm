@@ -1,13 +1,14 @@
 package pkgShape;
 
+import pkgException.CuboidException;
+
 public class Cuboid extends Rectangle {
 	
 	private int iDepth;
 
-	public Cuboid(int iWidth, int iLength) {
+	public Cuboid(int iWidth, int iLength, int iDepth) {
 		super(iWidth, iLength);
 		this.iDepth = iDepth;
-		
 		
 	}
 
@@ -28,13 +29,21 @@ public class Cuboid extends Rectangle {
 	
 	public double volume() {
 	
-		
 		return iDepth * super.getiWidth() * super.getiLength();
 		
 	}
 	
+	/* public double perimeter() throws Exception {
+		
+		if (Cuboid.perimeter() != 0)
+		{
+			throw new RectangleException(this);
+		}
+		return perimeter.remove(0);
+
+	}
 	
-	
+	}*/
 	
 
 }

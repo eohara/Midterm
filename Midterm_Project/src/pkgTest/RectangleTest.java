@@ -8,6 +8,8 @@ import pkgShape.Rectangle;
 
 public class RectangleTest {
 
+	
+
 	@Test
 	public void RectangleTest1() {
 		
@@ -63,23 +65,20 @@ public class RectangleTest {
 
 }
 	
-	//@Test
-	/*public void RectangleCompareTest() {
+	/*@Test
+	public void Rectangle_GreaterThan_CompareTest() {
 
-		Object rec1 = new Rectangle(8, 4);
-		Object rec2 = new Rectangle(10, 4);
+		Rectangle rec1 = new Rectangle(2, 2);
+		Rectangle rec2 = new Rectangle(1, 1);
 		
+		double area = rec1.area();
 		
-		System.out.println(compareTo(rec1));
+		double result = area.compareTo(rec2.area());
 		
-		@Test
-		public void testGreaterThan() {
-		    Rectangle rec1 = new Rectangle(2, 2);
-		    Rectangle rec2 = new Rectangle(1, 1);
-		    int result = Rectangle.compareTo(rec1, rec2);
-		    assertTrue("expected to be greater than", result >= 1);
-		}*/
-
+		assertTrue(result >= 1);
+		
+		}
+*/
 	
 	
 	
