@@ -5,7 +5,7 @@ public class Rectangle extends Shape implements Comparable{
 	
 	private int iWidth;
 	private int iLength;
-	private double area;
+	
 	
 
 	public Rectangle(int iWidth, int iLength) {
@@ -42,12 +42,10 @@ public class Rectangle extends Shape implements Comparable{
 		
 	}
 	
-	public double getArea() {
-		return area = this.area();
-	}
+	
 
 	@Override
-	public double perimeter() {
+	public double perimeter() throws Exception {
 		
 		return 2 * (iLength + iWidth);
 	}

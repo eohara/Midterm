@@ -52,7 +52,7 @@ public class RectangleTest {
 	}
 	
 	@Test
-	public void RectanglePerimeterTest() {
+	public void RectanglePerimeterTest() throws Exception {
 
 		Rectangle r = new Rectangle(8, 4);
 	
@@ -65,7 +65,7 @@ public class RectangleTest {
 
 }
 	
-	/*@Test
+	@Test
 	public void Rectangle_GreaterThan_CompareTest() {
 
 		Rectangle rec1 = new Rectangle(2, 2);
@@ -78,9 +78,35 @@ public class RectangleTest {
 		assertTrue(result >= 1);
 		
 		}
-*/
-	
-	
+
+	@Test
+	public void Rectangle_LessThan_CompareTest() {
+
+		Rectangle rec1 = new Rectangle(1, 1);
+		Rectangle rec2 = new Rectangle(2, 3);
+		
+		double area = rec1.area();
+		
+		double result = area.compareTo(rec2.area());
+		
+		assertTrue(result <= 1);
+		
+		}
+
+	@Test
+	public void Rectangle_Equals_CompareTest() {
+
+		Rectangle rec1 = new Rectangle(2, 2);
+		Rectangle rec2 = new Rectangle(2, 2);
+		
+		double area = rec1.area();
+		
+		double result = area.compareTo(rec2.area());
+		
+		assertTrue(result == 1);
+		
+		}
+
 	
 	
 	

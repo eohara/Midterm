@@ -1,36 +1,71 @@
 package pkgShape;
 import pkgShape.Cuboid;
+import pkgShape.Rectangle;
+
 
 public class SortByArea implements Comparable {
 
-	
-	public int compare(Cuboid a, Cuboid b) {
-		
-		Cuboid cub1 = (Cuboid)a;
-		Cuboid cub2 = (Cuboid)b;
-		
-		
-		double thisArea = this.area();
-		double otherArea = r.area();
-	
-		
-		if 
-		
-		(thisArea > otherArea) {
-			return 1;
-		}
+	@Override
+	public int compareTo(Object o) {
+		Cuboid c = (Cuboid)o;
+			
+		//Check to see if object o is a cuboid
+		if (o instanceof Cuboid) {
 				
-		else if (thisArea == otherArea) {
-			return 0;
+			System.out.println("o is a Cuboid");
 		}
-				
+			
 		else {
-			return -1;
+			System.out.println("o is not a Cuboid");
+			}
+			
+			double thisArea = Cuboid().area();
+			double otherArea = c.area();
+		
+			
+			if 
+			
+			(thisArea > otherArea) {
+				return 1;
+			}
+					
+			else if (thisArea == otherArea) {
+				return 0;
+			}
+					
+			else {
+				return -1;
+			}
+					
+							
 		}
+
+		
+		
+		public int compare(Cuboid a, Cuboid b) {
+			
+			int result = a.compareTo(b);
+			
+				
+			if (result > 0) {
+				return 1;
+			}
+						
+			else if (result == 0) {
+				return 0;
+			}
+					
+			else {
+				return -1;
+			}
+						
+								
+		}
+
 				
 						
 	}
 
 	
 
-}
+

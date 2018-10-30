@@ -42,19 +42,20 @@ public class CuboidTest {
 	
 	}
 	
-	/*@Test
-	public void testUnsupportedOperationException() {
+	@Test
+	public void testUnsupportedOperationException() throws Exception {
 	 
 	Cuboid c = new Cuboid(3, 4, 2);
 	boolean thrown = false;
 
 	try {
 	    c.perimeter();
-	  } catch (UnsupportedOperationExceptio e) {
+	  } 
+	  catch (UnsupportedOperationException e) {
 	    thrown = true;
 	  }
 
 	  assertTrue(thrown);
 	}
-*/
+
 }

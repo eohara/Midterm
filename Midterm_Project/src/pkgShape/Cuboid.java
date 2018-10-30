@@ -33,17 +33,22 @@ public class Cuboid extends Rectangle {
 		
 	}
 	
-	/* public double perimeter() throws Exception {
+	public double perimeter() throws Exception {
 		
-		if (Cuboid.perimeter() != 0)
+		Cuboid c = new Cuboid(getiWidth(), getiLength(), getiDepth());
+		
+		if (c.perimeter() != 0)
 		{
-			throw new RectangleException(this);
+			throw new CuboidException(this);
 		}
-		return perimeter.remove(0);
+		return UnsupportedOperationException(c);
 
 	}
 	
-	}*/
+	
+	
+	
+	}
 	
 
-}
+

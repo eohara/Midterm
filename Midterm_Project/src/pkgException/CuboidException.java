@@ -7,8 +7,12 @@ public class CuboidException extends Exception{
 	private Cuboid c;
 	
 	
-	public CuboidException(Cuboid r) {
-		super();
+	public CuboidException(Cuboid cuboid) {
+		
+	}
+		
+
+	public void UnsupportedOperationException(Cuboid c) {
 		this.c = c;
 	}
 
