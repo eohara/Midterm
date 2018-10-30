@@ -37,12 +37,19 @@ public class Cuboid extends Rectangle {
 		
 		Cuboid c = new Cuboid(getiWidth(), getiLength(), getiDepth());
 		
-		if (c.perimeter() != 0)
+		try 
 		{
-			throw new CuboidException(this);
+			if (c.perimeter() != 0) {
+				throw new CuboidException(this);
 		}
-		return UnsupportedOperationException(c);
+		
+		}
+		finally{
+			
+			return UnsupportedOperationException(c);
 
+		}
+		
 	}
 	
 	
